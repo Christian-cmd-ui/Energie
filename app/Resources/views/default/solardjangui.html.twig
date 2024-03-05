@@ -28,13 +28,13 @@
 
         <ul class="nav nav-tabs row g-2 d-flex">
             <li class="nav-item col-3">
-                <a class="nav-link active show" href="#tab-1">
-                    <h4>Accueil</h4>
+                <a class="nav-link" href="#tab-1">
+                    <h4>A Propos</h4>
                 </a>
             </li>
             <li class="nav-item col-3">
                 <a class="nav-link" href="#tab-2">
-                    <h4>A propos</h4>
+                    <h4>Comment ça marche</h4>
                 </a>
             </li>
             <li class="nav-item col-3">
@@ -50,7 +50,7 @@
         </ul>
 
         <div class="tab-content">
-            <div class="tab-pane active show" id="tab-1">
+            <div class="tab-pane  {% if app.request.attributes.get('_route') == 'solardjangui#tab1' %}active{% endif %} show" id="tab-1">
                 <div class="row">
                                 <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
                                         data-aos="fade-up" data-aos-delay="100">
@@ -90,14 +90,12 @@
                                 </div>
                                 </div>
                                 </div><!-- End tab content item -->
-            <div class="tab-pane" id="tab-2">
+            <div class="tab-pane {% if app.request.attributes.get('_route') == 'solardjangui#tab2' %}active{% endif %}" id="tab-2">
                 <div class="row">
                                 <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                                        <h3>Neque exercitationem debitis</h3>
-                                        <p class="fst-italic">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                        dolore
-                                        magna aliqua.
+                                        <h3>Critère d'éligibilité </h3>
+                                        <p class="fst-italic justify-text">
+                                        Pour rejoindre DjanguiSolaire, votre association doit répondre à l'un des critères suivants : être une association de femmes dont les membres sont actives dans le petit commerce, l'entrepreneuriat ou l'auto-emploi; être une association de jeunes entrepreneurs ou de jeunes techniciens intéressée par la promotion du solaire de qualité ; être un centre de santé ou une infrastructure sociale. 
                                         </p>
                                         <ul>
                                         <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
@@ -109,10 +107,49 @@
                                         pariatur.</li>
                                         </ul>
                                 </div>
-                                <div class="col-lg-6 order-1 order-lg-2 text-center">
+                                <!-- <div class="col-lg-6 order-1 order-lg-2 text-center">
                                         <img src="assets/img/features-2.jpg" alt="" class="img-fluid">
+                                </div>-->
+                                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                                        <h3>Conditions d’inscription d’association - avantage pour une association de s'inscrire?</h3>
+                                        <p class="fst-italic justify-text">
+                                        SolarDjangui a également un rôle de promotion du développement local et vise à contribuer à accroître le fonds de roulement des associations affiliées. Lorsque votre association est affiliée, 2% des ristournes de vos membres vous sont reversées pour les activités internes de votre association. 
+                                        </p>
                                 </div>
+                                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                                        <h3>Conditions d’inscription individuelle des membres d’associations - avantages pour les membres de votre association doivent s’inscrire?</h3>
+                                        <p class="fst-italic justify-text">
+                                        Les membres d’une association peuvent s’affilier par inscription individuelle directement auprès de l'équipe de SolarDjangui ou en ligne ou par Whatsapp mais sous couvert l'association membre qui confirme leur statut de membre au préalable. En tant que membres affiliés individuellement a SolarDjangui via votre association, vous bénéficiez de nombreux avantages. Vous avez la possibilité de redistribuer les produits solaires dans votre communauté et obtenir jusqu'à 10% de bénéfice direct sur chaque vente; en plus vous obtenez des ristournes mensuelles chaque mois à hauteur de 5% sur votre activité. Plus intéressant encore, vous bénéficiez d’un taux préférentiel sur les formations organisées sur le solaire, la maintenance des équipements solaires, le marketing digital, la vente en ligne et sur Whatsapp entre autres. Pour confirmer votre affiliation vous devez verser 10 000XAF correspondant aux frais pour votre première formation sur le solaire et la vente. 
+                                        </p>
                                 </div>
+                                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                                        <h3>Procédure de souscription : </h3>
+                                        <ul>
+                                        <li class="justify-text"><i class="bi bi-check2-all"></i> <b><i>1. Inscription de votre association :</i></b> Le président de votre association doit s'inscrire en fournissant les informations requises, notamment le nom de l'association, les coordonnées du président, le nombre de membres (minimum 10) engagés à augmenter leurs revenus par la promotion du solaire.</li>
+                                        <li class="justify-text"><i class="bi bi-check2-all"></i> <b><i>2. Sélection des produits Schneider :</i></b> Vous devez sélectionner les produits Schneider que vous souhaitez redistribuer dans les villages.</li>
+                                        <li class="justify-text"><i class="bi bi-check2-all"></i> <b><i>3. Indication des zones de distribution :</i></b> Vous devez indiquer les zones dans lesquelles vous souhaitez distribuer les produits solaires.</li>
+                                        <li class="justify-text"><i class="bi bi-check2-all"></i> <b><i>4. Priorités en matière de formations :</i></b> Vous devez préciser vos priorités en matière de formations, telles que la vente en ligne, l'installation solaire, la transition écologique, etc. </li>
+                                        <li class="justify-text"><i class="bi bi-check2-all"></i> <b><i>5. Paiement des frais d'adhésion :</i></b> Vous devez payer des frais d'adhésion de 10 000 XAF pour l'enregistrement de votre association. Chaque membre devra ensuite payer 10 000 XAF pour les formations.</li>
+                                        <li class="justify-text"><i class="bi bi-check2-all"></i> <b><i>6. Rendez-vous avec notre équipe :</i></b> Une fois les frais d'adhésion payés, notre équipe prendra rendez-vous avec votre association pour expliquer le processus d'approvisionnement en produits, le point de retrait des produits et la comptabilisation de vos ristournes. Nous fixerons également les dates des formations pour votre association.</li>
+                                        <li class="justify-text"><i class="bi bi-check2-all"></i> N'hésitez pas à contacter notre équipe par téléphone ou par email pour obtenir plus d'informations sur la procédure de souscription et pour toute autre question. Nous serons ravis de vous accompagner dans votre démarche pour promouvoir l'énergie solaire de qualité et augmenter vos revenus.</li>
+                                        </ul>
+                                </div>
+                                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                                        <h3>Critère d'éligibilité </h3>
+                                        <p class="fst-italic justify-text">
+                                        Pour rejoindre DjanguiSolaire, votre association doit répondre à l'un des critères suivants : être une association de femmes dont les membres sont actives dans le petit commerce, l'entrepreneuriat ou l'auto-emploi; être une association de jeunes entrepreneurs ou de jeunes techniciens intéressée par la promotion du solaire de qualité ; être un centre de santé ou une infrastructure sociale. 
+                                        </p>
+                                        <ul>
+                                        <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                        <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                                        <li><i class="bi bi-check2-all"></i> Provident mollitia neque rerum asperiores dolores quos qui a.
+                                        Ipsum neque dolor voluptate nisi sed.</li>
+                                        <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                        aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
+                                        pariatur.</li>
+                                        </ul>
+                                </div>
+                            </div>
             </div>
             <div class="tab-pane" id="tab-3">
                 <!-- Contenu de l'onglet Explica -->

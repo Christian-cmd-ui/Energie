@@ -1557,30 +1557,31 @@ button {
   }
 }
 .banner {
-  position: relative; /* Assurez-vous que la bannière est positionnée relativement */
-  height: 300px; /* Hauteur de la bannière */
-  background:#1f5e33; /* Chemin vers votre image */
-  background-size: cover; /* Redimensionne l'image pour couvrir la bannière */
-  background-position: center; /* Centre l'image horizontalement et verticalement */
+  position: relative;
+  height: 300px;
+  background:#f5f6f7;
+  background-size: cover;
+  background-position: center;
+ 
 }
 
 .banner h1{
-  position: relative; /* Assurez-vous que le contenu est positionné relativement */
-  z-index: 1; /* Assurez-vous que le contenu est au-dessus de l'image floutée */
-  text-align: center; /* Alignement du texte au centre */
-  color: #1c2222; /* Couleur du texte */
-  font-weight: bold; /* Texte en gras */
-  font-size: 36px; /* Taille du texte */
-  font-family: 'Times New Roman',Times, sans-serif; /* Changer de style de police */
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #ffb901;
+  font-weight: bold;
+  font-size: 36px;
+  font-family: 'Times New Roman',Times, sans-serif;
 }
 .banner p {
-  position: relative; /* Assurez-vous que le contenu est positionné relativement */
-  z-index: 1; /* Assurez-vous que le contenu est au-dessus de l'image floutée */
-  text-align: justify; /* Alignement du texte au centre */
-  color: #fcfcfc; /* Couleur du texte */
-  font-weight: bold; /* Texte en gras */
-  font-size: 20px; /* Taille du texte */
-  font-family: 'Times New Roman',Times, sans-serif; /* Changer de style de police */
+  position: relative;
+  z-index: 1;
+  text-align: justify;
+  color: #1c2222;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Times New Roman',Times, sans-serif;
 }
 .justify-text{
   text-align: justify;
