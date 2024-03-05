@@ -1,0 +1,336 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+  <!-- Slider section -->
+  <div class="hero_area">
+    <div class="bg-box" style="background: #979188;">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Slides du carrousel -->
+        <div class="carousel-inner" >
+          <div class="carousel-item active">
+            <img src="{{ asset('assets/images/test1.png') }}" class="d-block w-100" alt="accueil-image-association-equitable-energie.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="{{ asset('assets/images/4.jpeg') }}" class="d-block w-100" alt="image_2.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="{{ asset('assets/images/2.jpeg') }}" class="d-block w-100" alt="image_3.jpg">
+          </div>
+          <!-- Ajoutez plus de divs carousel-item ici pour chaque image supplémentaire -->
+        </div>
+      </div>
+    </div>
+    <!-- header section strats -->
+    <!--<header class="header_section" style="background: white;z-index: 1;">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              <img src="{{ asset('assets/images/logoEnergie.png') }}" style="width:100px" alt="">
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background: #108a46;">
+          
+          	      
+            <ul class="navbar-nav  mx-auto ">
+                  
+              <li class="nav-item {% if app.request.attributes.get('_route') == 'homepage' %}active{% endif %}">
+                <a class="nav-link" href="{{ path('homepage')}}">{% trans into app.request.locale  %}Accueil{% endtrans %}  <span class="sr-only">(current)</span></a>
+              </li>
+              
+              <li class="nav-item {% if app.request.attributes.get('_route') == 'about' %}active{% endif %}">
+                <a class="nav-link" href="{{path('about')}}">{% trans into app.request.locale  %}A propos{% endtrans %}  <span class="sr-only">(current)</span></a>
+              </li>
+             <div class="nav-item dropdown">
+									<a class="nav-item nav-link dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown" aria-expanded="false">{% trans into app.request.locale %}Nos activites{% endtrans %}</a>
+									<div class="dropdown-menu">
+										<a href="{{path('dons')}}" class="dropdown-item">{% trans into app.request.locale %}Dons{% endtrans %}</a>
+										<a href="{{path('formations')}}" class="dropdown-item">{% trans into app.request.locale %}Formations{% endtrans %}</a>
+										<a href="{{path('solardjangui')}}" class="dropdown-item">{% trans into app.request.locale %}SolarDjangui{% endtrans %}</a>
+                  	<a href="{{path('marketingsocial')}}" class="dropdown-item">{% trans into app.request.locale %}Marketing social{% endtrans %}</a>
+									</div>
+									</div> 
+              <li class="nav-item {% if app.request.attributes.get('_route') == 'beneficiaires' %}active{% endif %}">
+                <a class="nav-link" href="{{path('beneficiaires')}}">{% trans into app.request.locale  %}Beneficiaires{% endtrans %}  <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item {% if app.request.attributes.get('_route') == 'contact' %}active{% endif %}">
+                <a class="nav-link" href="{{path('contact')}}">{% trans into app.request.locale  %}Contact{% endtrans %}  <span class="sr-only">(current)</span></a>
+                </li>
+              <div class="nav-item dropdown">
+										{% if app.request.locale == 'fr' %}				
+											<a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown" aria-expanded="false"><span class="flag-icon flag-icon-fr"> </span>Français</a>
+											<div class="dropdown-menu" aria-labelledby="dropdown09">
+												<a class="dropdown-item" href="{{path('homepage', {'_locale': 'en'}) }}" style="color: black"><span class="flag-icon flag-icon-us" > </span>English</a>
+											</div>
+										{% else %}					
+											<a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown" aria-expanded="false"><span class="flag-icon flag-icon-us"> </span>Anglais</a>
+											<div class="dropdown-menu" aria-labelledby="dropdown09">
+												<a class="dropdown-item" href="{{path('homepage', {'_locale': 'fr'}) }}" style="color: black"><span class="flag-icon flag-icon-fr" > </span>French</a>
+											</div>
+											
+										{% endif %}
+								</div>  
+            </ul>
+            
+          </div>
+        </nav>
+      </div>
+    </header> -->
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+          <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container" style="background: #00924969;"> 
+                  <div class="row">
+                    <div class="col-md-7 col-lg-6 ">
+                      <div class="detail-box">
+                        <h1>
+                        Parce que chacun mérite de vivre dans la lumière : 
+                        </h1>
+                        <p>
+                        nous travaillons au quotidien pour rendre l'énergie accessible à tous. 
+                        </p>
+                        <div class="btn-box"  style="font-size: 50px;">
+                          Website Coming Soon...
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container ">
+              <ol class="carousel-indicators">
+                <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+                <li data-target="#customCarousel1" data-slide-to="1"></li>
+                <li data-target="#customCarousel1" data-slide-to="2"></li>
+              </ol>
+        </div>
+      </div>
+    </section>
+    </div>
+     <section class="food_section">
+    <div class="container">
+      <div class="section-header">
+        <h2>
+          Nos Activites
+        </h2>
+      </div>
+
+      <!-- <ul class="filters_menu">
+        <li class="active" data-filter="*">All</li>
+        <li data-filter=".burger">Burger</li>
+        <li data-filter=".pizza">Pizza</li>
+        <li data-filter=".pasta">Pasta</li>
+        <li data-filter=".fries">Fries</li>
+      </ul>  -->
+
+      <div class="filters-content">
+        <div class="row grid">
+          <div class="col-sm-4 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="{{ asset('assets/images/accueil-image-association-equitable-energie.jpg')}}" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Dons
+                  </h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div>
+                    <a href="{{path('dons')}}">
+                      En savoir plus
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="{{ asset('assets/images/4.jpeg')}}" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Formations
+                  </h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div>
+                    <a href="{{path('formations')}}">
+                      En savoir plus
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="{{ asset('assets/images/accueil-image-association-equitable-energie.jpg')}}" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    SolarDjangui
+                  </h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div>
+                    <a href="{{path('solardjangui')}}">
+                      En savoir plus
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-lg-4 all pizza d-flex justify-content-center">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="{{ asset('assets/images/4.jpeg')}}" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Marketing Social
+                  </h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div>
+                    <a href="{{path('marketingsocial')}}">
+                      En savoir plus
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Actualites -->
+    <div class="container">
+      <div class="section-header">
+        <div class="row">
+          <div class="col-12 mb-5" align="center">
+            <h2>Actualites recentes</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row gy-4">
+        <div class="col-lg-3 col-md-5 mt-3 mb-3">
+          <div class="portfolio-item">
+            <div class="portfolio-content width:"50px" height:"50px"">
+              <img src="{{asset('assets/images/4.jpeg')}}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <p>Formation des equipes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-5 mt-3 mb-3">
+          <div class="portfolio-item">
+            <div class="portfolio-content width:"50px" height:"50px"">
+              <img src="{{asset('assets/images/accueil-image-association-equitable-energie.jpg')}}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <p>Dons dans les orphelinats</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-5 mt-3 mb-3">
+          <div class="portfolio-item">
+            <div class="portfolio-content width:"50px" height:"50px"">
+              <img src="{{asset('assets/images/accueil-image-association-equitable-energie.jpg')}}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <p>Dons dans les orphelinats</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-5 mt-3 mb-3">
+          <div class="portfolio-item">
+            <div class="portfolio-content width:"50px" height:"50px"">
+              <img src="{{asset('assets/images/accueil-image-association-equitable-energie.jpg')}}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <p>Dons dans les orphelinats</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Histoires a succes -->
+      <section class="client_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container heading_center psudo_white_primary mb_45">
+        <h2>
+          Quelques temoiniages
+        </h2>
+      </div>
+      <div class="carousel-wrap row ">
+        <div class="owl-carousel client_owl-carousel">
+          <div class="item">
+            <div class="box">
+              <div class="detail-box">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                </p>
+                <h6>
+                  Moana Michell
+                </h6>
+                <p>
+                  magna aliqua
+                </p>
+              </div>
+              <div class="img-box">
+                <img src="images/client1.jpg" alt="" class="box-img">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="detail-box">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                </p>
+                <h6>
+                  Mike Hamell
+                </h6>
+                <p>
+                  magna aliqua
+                </p>
+              </div>
+              <div class="img-box">
+                <img src="images/client2.jpg" alt="" class="box-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<div class="container">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63692.515440461044!2d11.455891819531248!3d3.8568585521766274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2scm!4v1709197326784!5m2!1sfr!2scm&q=13.8327924295485403,11.480439312130633&q=23.8298140012129807,11.482325228836183&q=3.8847688232489586,11.512750044180901"width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+{% endblock %}
